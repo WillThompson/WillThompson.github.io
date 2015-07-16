@@ -1,12 +1,29 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
-  padding-top: 50px;
+  padding-top: 0px;
   padding-bottom: 20px;
-  background-color: #DDDDDD;
-  color: #333333;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: monospace;
+  font-size: 12pt;
 }
 
 .jumbotron{
-	background-color: #4477BB;
+	background-color: #000000;
+	border-top: 10px solid #FF1111;
 	color: #FFFFFF;
+}
+
+a{
+	color: #FF1111;
+}
+
+a:hover{
+	background-color: #FF1111;
+	color:#FFFFFF;
+	text-decoration: none;
+}
+
+ul{
+	padding-left: 0px;
 }
