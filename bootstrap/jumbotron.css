@@ -8,21 +8,21 @@ body {
 }
 
 .jumbotron{
-	background-color: #000000;
-	border-top: 10px solid #FF1111;
+	background-color: #555555;
+	border-top: 10px solid #00AA77;
 	color: #FFFFFF;
 }
 
 a{
-	color: #FF1111;
+	color: #00AA77;
 }
 
 a:hover{
-	background-color: #FF1111;
+	background-color: #00AA77;
 	color:#FFFFFF;
 	text-decoration: none;
 }
 
 ul{
-	padding-left: 0px;
+	padding-left: 1em;
 }
