@@ -23,6 +23,10 @@ a:hover{
 	text-decoration: none;
 }
 
+a:hover img{
+	background-color: #FFFFFF;
+}
+
 ul{
 	padding-left: 1em;
 }
