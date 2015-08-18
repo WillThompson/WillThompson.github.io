@@ -26,6 +26,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script type="text/javascript" src="./javascript/hello_world.js"></script>
     <script type="text/javascript"
     src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
@@ -79,10 +80,8 @@
         Stochastic differential equations (SDEs) are used in many disciplines, including physics, biology and finance, to model the behaviour of continuously changing quantities that are subject to random (unpredictable) forces, such as option prices, the electrical potential across the membranes of neurons, and the dynamics of microscopic particles in the precense of thermal fluctuations.<br><br>
 
         One of the most basic stochastic processes that can be modelled by a SDE is the Ornstein-Uhlenbeck process, $x_{t}$, which satisfies the following SDE:
-        $$dx_{t} = -\mu\,x_{t}\,dt + \sigma\,dW_{t}.$$
-        The term $dW_{t}$ represents a Gaussian white noise forcing, which essentially means that ... (to be continued, under construction)
-
-
+        $$dx_{t} = -\mu\,x_{t}\,dt + \sigma\,dW_{t}, \quad \mu > 0, \quad t \geq 0.$$
+        The term $dW_{t}$ represents a Gaussian white noise forcing, which essentially means that, over a short time interval $[t_{1},t_{2}]$, the trajectory of the system is perturbed by a normal random variable with mean zero and variance $|\,t_{2} - t_{1}\,|$. (Under construction...)
         <h3>Uncertainty Quantification</h3>
         In August of 2013, I participated in an industrial workshop at UBC organized by the Pacific Institute for the Mathematical Sciences (PIMS) and the Institute for Mathematics and its Applications (IMA), U. Minnesota. I worked with a small team on a problem of uncertainty quantification involving industrial iron smelters and heat sensors. <br><br>The essential question was ``Given a finite number of sensors that can be placed on (or in) the wall of an industrial smelter, what arrangement of the sensors minimizes the uncertainty in the wall shape profile?''. The results of our ten-day endeavour are published on the IMAs website <a href="http://www.ima.umn.edu/2013-2014/MM8.6-15.14/activities/Gilg-Albert/Team6_Final_Report.pdf">here</a>. Below is an ipython notebook where the simple one-dimensional version of the problem is outlined.
         <iframe width=100% height="600" src="http://nbviewer.ipython.org/github/WillThompson/plans_for_the_doomsday_device/blob/master/confidence_intervals_rod_length.ipynb"></iframe>
