@@ -108,7 +108,7 @@
       <hr>
 
       <footer>
-        <p>© WFT 2016</p>
+        <p>© WFT <?php echo date("Y"); ?></p>
       </footer>
     </div> <!-- /container -->
 
