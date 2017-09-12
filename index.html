@@ -54,7 +54,7 @@
         <div class="col-md-6">
           <h2>About me & Contact</h2>
           <p>
-    I'm a recent Ph.D. graduate from the Institute of Applied Mathematics and the Department of Mathematics at the University of British Columbia. My primary research interests are stochastic dynamical systems and the associated modelling problems and techniques. Please read my <a href="./files/CV_wthompson.pdf">CV</a>, <a href="./files/research_statement_wthompson.pdf">Research Statement</a>, and <a href="./files/teaching_statement_wthompson.pdf">Teaching Statement</a> to learn more. <br><br>
+    I'm a Ph.D. graduate from the Institute of Applied Mathematics and the Department of Mathematics at the University of British Columbia. My primary research interests are stochastic dynamical systems and the associated modelling problems and techniques. Please read my <a href="./files/CV_wthompson.pdf">CV</a>, <a href="./files/research_statement_wthompson.pdf">Research Statement</a>, and <a href="./files/teaching_statement_wthompson.pdf">Teaching Statement</a> to learn more. <br><br>
     I am also a contributor to the <a href="http://wiki.ubc.ca/Science:Math_Education_Resources">UBC Math Educational Resources wiki</a> which offers solutions to past math exams as well as instructional content. This project has been incredibly rewarding for me, not to mention loads of fun!<br><br>
     You can contact me via email: <a href="mailto:will.thompson@zoho.com">will.thompson@zoho.com</a>.
           </p>
@@ -78,11 +78,24 @@
         <h2>Summary of interests</h2>
         Here I lay out both my research interests and some little things that I find interesting.
         <h3>Stochastic Differential Equations</h3>
-        Stochastic differential equations (SDEs) are used in many disciplines, including physics, biology and finance, to model the behaviour of continuously changing quantities that are subject to random (unpredictable) forces, such as option prices, the electrical potential across the membranes of neurons, and the dynamics of microscopic particles in the precense of thermal fluctuations.<br><br>
+        Stochastic differential equations (SDEs) are used in many disciplines, including physics, biology and finance, to model the behaviour of continuously changing quantities that are subject to random (unpredictable) forces, such as option prices, the electrical potential across the membranes of neurons, and the dynamics of microscopic particles in the presence of thermal fluctuations. <br><br>
 
         One of the most basic stochastic processes that can be modelled by a SDE is the Ornstein-Uhlenbeck process, $x_{t}$, which satisfies the following SDE:
         $$dx_{t} = -\mu\,x_{t}\,dt + \sigma\,dW_{t}, \quad \mu > 0, \quad t \geq 0.$$
-        The term $dW_{t}$ represents a Gaussian white noise forcing, which essentially means that, over a short time interval $[t_{1},t_{2}]$, the trajectory of the system is perturbed by a normal random variable with mean zero and variance $|\,t_{2} - t_{1}\,|$. (Under construction...)
+        The term $dW_{t}$ represents a Gaussian white noise forcing, which essentially means that, over a short time interval $[t_{1},t_{2}]$, the trajectory of the system is perturbed by a normal random variable with mean zero and variance $|\,t_{2} - t_{1}\,|$. This process has found use in essentially every field where continuous-time models with random fluctuations are appropriate.
+
+        When talking about the solutions to SDEs one has to consider, not one, but two types of solutions. The <i>strong</i> solution and the <i>weak</i> solution. The strong solution refers a particular trajectory for the variable $x_{t}$ for a given realization of the white noise process, $W_{t}$. In the case of the Ornstein-Uhlenback process above, the strong solution can be written as
+        $$ x_{t} = x_{0}\exp(-\mu t) + \sigma\exp(-\mu t)\int_{0}^{t}\exp(\mu s) dW_{s} $$.
+
+
+        The weak solution (which I personally find more interesting) refers to the probability distribution, $\rho = \rho(x,t)$, of all possible paths $x_{t}$. For the OU process, the weak solution (i.e. the probability distribution for $x_{t}$) satisfies the partial differential equation
+        $$
+        \frac{\partial \rho}{\partial t} = \mu\frac{\partial \rho}{\partial x} + \frac{\sigma^{2}}{2}\frac{\partial^{2}\rho}{\partial x^{2}}, \quad \rho(x,0) = \delta(x - x_{0}).
+        $$
+        Solving this PDE problem gives the probability density function for $x_{t}$, which is a Gaussian with mean and variance that evolve in time. In the limit $t \to \infty$, it can be shown that $$\rho \to \sqrt{\frac{\mu}{\pi \sigma^{2}}}\exp(-\mu x^{2}/\sigma^{2}).$$
+
+        Closed-form strong solutions can be very difficult to derive, but weak solutions can be derived for many SDE models.
+
         <h3>Uncertainty Quantification</h3>
         In August of 2013, I participated in an industrial workshop at UBC organized by the Pacific Institute for the Mathematical Sciences (PIMS) and the Institute for Mathematics and its Applications (IMA), U. Minnesota. I worked with a small team on a problem of uncertainty quantification involving industrial iron smelters and heat sensors. <br><br>The essential question was ``Given a finite number of sensors that can be placed on (or in) the wall of an industrial smelter, what arrangement of the sensors minimizes the uncertainty in the wall shape profile?''. The results of our ten-day endeavour are published on the IMAs website <a href="http://www.ima.umn.edu/2013-2014/MM8.6-15.14/activities/Gilg-Albert/Team6_Final_Report.pdf">here</a>.
         </div>
