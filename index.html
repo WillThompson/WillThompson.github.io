@@ -85,8 +85,7 @@
         The term $dW_{t}$ represents a Gaussian white noise forcing, which essentially means that, over a short time interval $[t_{1},t_{2}]$, the trajectory of the system is perturbed by a normal random variable with mean zero and variance $|\,t_{2} - t_{1}\,|$. This process has found use in essentially every field where continuous-time models with random fluctuations are appropriate.
 
         When talking about the solutions to SDEs one has to consider, not one, but two types of solutions. The <i>strong</i> solution and the <i>weak</i> solution. The strong solution refers a particular trajectory for the variable $x_{t}$ for a given realization of the white noise process, $W_{t}$. In the case of the Ornstein-Uhlenback process above, the strong solution can be written as
-        $$ x_{t} = x_{0}\exp(-\mu t) + \sigma\exp(-\mu t)\int_{0}^{t}\exp(\mu s) dW_{s} $$.
-
+        $$ x_{t} = x_{0}\exp(-\mu t) + \sigma\exp(-\mu t)\int_{0}^{t}\exp(\mu s) dW_{s}. $$
 
         The weak solution (which I personally find more interesting) refers to the probability distribution, $\rho = \rho(x,t)$, of all possible paths $x_{t}$. For the OU process, the weak solution (i.e. the probability distribution for $x_{t}$) satisfies the partial differential equation
         $$
