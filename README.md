@@ -1,3 +1,5 @@
-# WillThompson.github.io
+## WillThompson.github.io
 
-Just testing some of my understanding of aspects of html/css/etc. dev.
+Previously as a personal website, but now a redirect to where I 'live' online. 
+
+I enjoy python.
