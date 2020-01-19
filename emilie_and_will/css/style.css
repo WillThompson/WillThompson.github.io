@@ -3461,7 +3461,7 @@ input[type="button"].btn-block {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
-  font-family: "Berkshire Swash", cursive;
+  font-family: 'Mrs Saint Delafield', cursive;
 }
   .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none; }
@@ -8135,7 +8135,7 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 body {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 17px;
   line-height: 1.8;
   font-weight: 400;
@@ -8459,7 +8459,7 @@ h5,
         .video-hero .text .subheading:after, .video-hero .text .subheading:before {
           display: none; } }
     .video-hero .text h1 {
-      font-family: "Berkshire Swash", cursive;
+      font-family: 'Mrs Saint Delafield', cursive;
       font-size: 9vw;
       color: #fff; }
 
@@ -8655,7 +8655,7 @@ textarea.form-control {
 .ftco-about h2 {
   font-size: 64px;
   color: #66CDAA;
-  font-family: "Berkshire Swash", cursive; }
+  font-family: 'Mrs Saint Delafield', cursive; }
 
 .ftco-about .img {
   display: block;
@@ -9000,7 +9000,7 @@ textarea.form-control {
     line-height: 1.2;
     font-size: 90px;
     font-weight: normal;
-    font-family: "Berkshire Swash", cursive;
+    font-family: 'Mrs Saint Delafield', cursive;
     color: #66CDAA; }
     @media (max-width: 991.98px) {
       .heading-section h2 {
