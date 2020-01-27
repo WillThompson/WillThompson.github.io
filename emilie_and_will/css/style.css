@@ -3461,7 +3461,7 @@ input[type="button"].btn-block {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
-  font-family: 'Mrs Saint Delafield', cursive;
+  font-weight: 100;
 }
   .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none; }
@@ -8375,8 +8375,8 @@ h5,
         color: #005555; }
 
 .navbar-brand {
-  font-weight: 900;
-  font-size: 24px; }
+    font-weight: 400;
+    }
   .navbar-brand span {
     font-weight: 900; }
 
