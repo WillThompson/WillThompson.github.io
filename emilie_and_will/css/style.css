@@ -8459,7 +8459,7 @@ h5,
         .video-hero .text .subheading:after, .video-hero .text .subheading:before {
           display: none; } }
     .video-hero .text h1 {
-      font-family: 'Mrs Saint Delafield', cursive;
+      font-family: 'Meddon', cursive;
       font-size: 9vw;
       color: #fff; }
 
@@ -8655,7 +8655,7 @@ textarea.form-control {
 .ftco-about h2 {
   font-size: 64px;
   color: #005555;
-  font-family: 'Mrs Saint Delafield', cursive; }
+  font-family: 'Meddon', cursive; }
 
 .ftco-about .img {
   display: block;
@@ -9000,7 +9000,7 @@ textarea.form-control {
     line-height: 1.2;
     font-size: 90px;
     font-weight: normal;
-    font-family: 'Mrs Saint Delafield', cursive;
+    font-family: 'Meddon', cursive;
     color: #005555; }
     @media (max-width: 991.98px) {
       .heading-section h2 {
