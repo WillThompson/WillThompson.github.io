@@ -9000,8 +9000,8 @@ textarea.form-control {
   .heading-section h2 {
     line-height: 1.2;
     font-size: 90px;
-    font-weight: normal;
-    font-family: 'Meddon', cursive;
+    font-weight: 100;
+    font-family: 'Raleway', sans-serif;
     color: #005555; }
     @media (max-width: 991.98px) {
       .heading-section h2 {
