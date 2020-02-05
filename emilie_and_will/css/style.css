@@ -5407,7 +5407,8 @@ button.bg-light:focus {
   background-color: #dae0e5 !important; }
 
 .bg-dark {
-  background-color: #343a40 !important; }
+  color: #CCCCCC !important;
+  background-color: #005555 !important; }
 
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
@@ -8139,7 +8140,7 @@ body {
   font-size: 17px;
   line-height: 1.8;
   font-weight: 400;
-  color: #999999; }
+  color: #888888; }
   body.menu-show {
     overflow: hidden;
     position: fixed;
