@@ -1,5 +1,8 @@
 :root {
   --header-font: "Racing Sans One";
+  --primary-colour: #00cc99;
+  --secondary-colour: #aa1155;
+  --secondary-colour-darken: #990044;
 }
 
 body {
@@ -9,15 +12,15 @@ body {
 
 h1 {
     font-family: var(--header-font), cursive;
-    color: #f90093;
+    color: var(--primary-colour);
 }
 
 a {
-    color: #f90093;
+    color: var(--secondary-colour);
 }
 
 a:hover {
-    color: #e80082;
+    color: var(--secondary-colour-darken);
     text-decoration: none;
 }
 
@@ -28,8 +31,8 @@ a:hover {
 }
 
 .navbar{
-  background-color: #f90093 !important;
-  border-bottom: 2px solid #000000;
+  background-color: var(--primary-colour) !important;
+  /*border-bottom: 2px solid #000000;*/
  }
 
 
