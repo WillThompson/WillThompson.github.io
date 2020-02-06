@@ -74,12 +74,20 @@
           <div class="col-lg-12">
             <h1 class="mt-5">Interests</h1>
             <p>
-                Stochastic differential equations (SDEs) are used in many disciplines to model the behaviour of continuously changing quantities that are subject to random (unpredictable) forces, such as option prices, the electrical potential across the membranes of neurons, and the dynamics of microscopic particles.</p>
+                <h5>Stochastic Differential Equations</h5>
+                <p>Stochastic differential equations (SDEs) are used in many disciplines to model the behaviour of continuously changing quantities that are subject to random (unpredictable) forces, such as option prices, the electrical potential across the membranes of neurons, and the dynamics of microscopic particles.</p>
 
     <p>A generic SDE process, $x_{t}$, can be modelled by the following equation: $$ dx_{t} = f(x_{t},t)\,dt + \sigma(x_{t},t)\,dW_{t}, \quad t \geq 0. $$ This equation describes the change in $x_{t}$ , denoted $dx_{t}$, over a miniscule time interval $dt \to 0^{+}$ as the sum of a deterministic component $f\,dt$ and a random component $\sigma\,dW_{t}$. The term $dW_{t}$ typically represents a Gaussian white noise forcing, which essentially means that, over time change $dt$, the trajectory of the system is perturbed by a Gaussian random variable with mean zero and variance $dt$. The effect of this perturbation is scaled by the quantity $\sigma$ which can be state-dependent.<br>
 
     <p>My interest in these processes is driven by my interest in differential equations in general, and seeing what you can learn about time-varying processes in the presence of unpredictable factors.</p>
             </p>
+
+            <h5>Randomness</h5>
+    		<p>Generating random data streams for encryption and security is increasingly important as our lives are becoming more and more web-based. Anything predictable has the potential to be exploited by a bad actor and compromises the integrity of that which is intended to be secret.</p>
+    		<p>There is a zoo of many different algorithms for generating (pseudo-) random data, and they all need to be assessed to ensure they have the appropriate qualities for their intended use. While there is no way to prove that a data stream is random, there are definitely ways to effectively prove that it is not random. The methods for proving non-randomness are statistical. Hypothesis testing is used to see if the statistics of a random datastream conform to what would be expected from a truly random sequence.</p>
+    		<p>I enjoy assessing the randomness of data as it is one of the times (possibly the only time) where manufactured data streams are subject to rigorous statistical analysis and there is an obvious importance to making sure the analysis is competently performed. A discussion of some tests for scaled random data can be found in "<a href="https://en.wikipedia.org/wiki/The_Art_of_Computer_Programming">The Art of Computer Programming</a>" by Donald Knuth. I have implemented some of the tests</p>
+
+
           </div>
         </div>
       </div>
