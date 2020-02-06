@@ -1,12 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta http-equiv="refresh" content="1; URL='http://wills.hopto.org'" />
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
   <title>wft</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu|Racing+Sans+One&display=swap" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+
 </head>
 
 <body>
-<h1 style="font-family: monospace;">Redirecting...</h1>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">wft</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#interests">My Interests</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#publications">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <section id='about'>
+      <div class="container" style="margin-top: 70px;">
+        <div class="row">
+          <div class="col-lg-12">
+              <h1 class="mt-5">About Me</h1>
+
+            <p> Thanks for taking the time to visit! My name is Will. I am a data scientist and applied mathematician living in Vancouver, BC.</p>
+
+            <p> I obtained my Ph.D. at UBC where I studied the effects of random noise on nonlinear dynamical systems. The focus of my thesis was systematic dimensionality reduction methods for dynamical systems with multiple time scales and heavy-tailed stochastic driving. </p>
+
+            <p> In my spare time, I enjoy experimenting with git commits.</p>
+
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section id='interests'>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="mt-5">Interests</h1>
+            <p>
+                Stochastic differential equations (SDEs) are used in many disciplines to model the behaviour of continuously changing quantities that are subject to random (unpredictable) forces, such as option prices, the electrical potential across the membranes of neurons, and the dynamics of microscopic particles.</p>
+
+    <p>A generic SDE process, $x_{t}$, can be modelled by the following equation: $$ dx_{t} = f(x_{t},t)\,dt + \sigma(x_{t},t)\,dW_{t}, \quad t \geq 0. $$ This equation describes the change in $x_{t}$ , denoted $dx_{t}$, over a miniscule time interval $dt \to 0^{+}$ as the sum of a deterministic component $f\,dt$ and a random component $\sigma\,dW_{t}$. The term $dW_{t}$ typically represents a Gaussian white noise forcing, which essentially means that, over time change $dt$, the trajectory of the system is perturbed by a Gaussian random variable with mean zero and variance $dt$. The effect of this perturbation is scaled by the quantity $\sigma$ which can be state-dependent.<br>
+
+    <p>My interest in these processes is driven by my interest in differential equations in general, and seeing what you can learn about time-varying processes in the presence of unpredictable factors.</p>
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section id='publications'>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="mt-5">Publications</h1>
+            <ul>
+            <li><b>W. F. Thompson</b>, R. Kuske, and A. Monahan. <a href="https://aip.scitation.org/doi/abs/10.1063/1.4985675?journalCode=cha">Reduced &alpha;-stable dynamics for multiple time scale systems forced with correlated additive and multiplicative Gaussian white noise</a>. <i>Chaos</i>, (27) 113105, Nov 2017.
+            </li>
+            <li><b>W. F. Thompson</b>, R. Kuske, and A. Monahan. <a href="http://epubs.siam.org/doi/abs/10.1137/140990632">Stochastic averaging of systems with multiple time scales forced with &alpha;-stable noise</a>. <i>SIAM Multi. Model. Simul.</i>, 13(4), 1194–1223, Oct. 2015.
+            </li>
+            <li> <b>W. F. Thompson</b>, A. Monahan, and D. Crommelin. <a href="http://journals.ametsoc.org/doi/abs/10.1175/JAS-D-13-0260.1">Parametric estimation of the stochastic dynamics of sea surface winds</a>. <i>AMS Jour. Atmos. Sci.</i>, 71(9), 3465-3483, Sep. 2014.
+            </li>
+            <li><b>W. F. Thompson</b>, R. Kuske, and Y.-X. Li. <a href="http://www.aimsciences.org/journals/displayArticlesnew.jsp?paperID=7267">Stochastic phase dynamics of noise driven synchronization of two conditional coherent oscillators</a>. <i>DCDS-A</i>, 32(8), 2971-2995, Aug. 2012.
+            </li>
+            <li> A. G. Fowler, <b>W. F. Thompson</b>, Z. Yan, A. M. Stephens, B. L. T. Plourde, and F. K. Wilhelm. <a href="http://www.nrcresearchpress.com/doi/abs/10.1139/p07-203?journalCode=cjp">Long-range coupling and scalable architecture for superconducting flux qubits</a>. <i>Can. Jour. of Phys.</i>, 86(4), 533-540, 2008.
+            </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <section id='contact'>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="mt-5">Contact me</h1>
+            <p>
+                <a href="https://www.linkedin.com/in/wft/"><img class="socicon" src="./img/linkedin.png"></a>
+                <a href="https://github.com/WillThompson"><img class="socicon" src="./img/github.png"></a>
+                <a href="https://www.instagram.com/_wft/"><img class="socicon" src="./img/instagram.png"></a>
+                <a href="https://twitter.com/_wft"><img class="socicon" src="./img/twitter.png"</a>
+                <a href="mailto:will.thompson@zoho.com"><img class="socicon" src="./img/mail.png"></a>
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},});
+      MathJax.Hub.Config({jax: ["input/TeX","output/HTML-CSS"]})
+      MathJax.Hub.Config({ "HTML-CSS": {preferredFont: "TeX"}});
+  </script>
+
 </body>
+
 </html>
