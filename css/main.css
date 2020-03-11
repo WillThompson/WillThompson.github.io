@@ -1,18 +1,20 @@
 :root {
-  --header-font: "Racing Sans One";
-  --primary-colour: #00cc99;
-  --secondary-colour: #aa1155;
-  --secondary-colour-darken: #990044;
+  --header-font: "Racing Sans One", cursive;
+  --main-font: "Helvetica", sans-serif;
+  --primary-colour: #1d3557;
+  --secondary-colour: #7777AA;
+  --secondary-colour-darken: #666699;
 }
 
 body {
-    font-family: "Helvetica", sans-serif;
-    color: #666666;
+    font-family: var(--main-font);
+    color: #444444;
 }
 
 h1 {
-    font-family: var(--header-font), cursive;
+    font-family: var(--header-font);
     color: var(--primary-colour);
+    margin-bottom: 1em;
 }
 
 a {
@@ -21,18 +23,16 @@ a {
 
 a:hover {
     color: var(--secondary-colour-darken);
-    text-decoration: none;
 }
 
 
 .navbar-brand{
-    font-family: var(--header-font), cursive;
+    font-family: var(--header-font);
     font-size: 30px;
 }
 
 .navbar{
   background-color: var(--primary-colour) !important;
-  /*border-bottom: 2px solid #000000;*/
  }
 
 
