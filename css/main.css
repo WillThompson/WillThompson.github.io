@@ -1,13 +1,14 @@
 :root {
   --header-font: "Racing Sans One", cursive;
   --main-font: "Helvetica", sans-serif;
-  --primary-colour: #1d3557;
-  --secondary-colour: #457b9d;
-  --secondary-colour-darken: #346a8c;
+  --primary-colour: #19297c;
+  --secondary-colour: #256eff;
+  --secondary-colour-darken: #3ddc97;
 }
 
 body {
     font-family: var(--main-font);
+    background: #fcfcfc;
     color: #444444;
 }
 
