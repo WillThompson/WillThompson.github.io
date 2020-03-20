@@ -1,9 +1,9 @@
 :root {
   --header-font: "Racing Sans One", cursive;
   --main-font: "Helvetica", sans-serif;
-  --primary-colour: #19297c;
-  --secondary-colour: #256eff;
-  --secondary-colour-darken: #3ddc97;
+  --primary-colour: #dc0073;
+  --secondary-colour: #345995;
+  --secondary-colour-darken: #123773;
 }
 
 body {
