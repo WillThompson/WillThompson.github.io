@@ -9,7 +9,6 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-55592867-1');
     </script>
 
@@ -42,15 +41,15 @@
             <li class="nav-item">
                 <a class="nav-link" href="#about">About Me</a>
             </li>
-            <li class="nav-item">
+            <!--<li class="nav-item">
                 <a class="nav-link" href="#interests">Interests</a>
-            </li>
+            </li>-->
             <li class="nav-item">
                 <a class="nav-link" href="#publications">Publications</a>
             </li>
-            <li class="nav-item">
+            <!--<li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
-            </li>
+            </li>-->
         </ul>
       </div>
     </div>
@@ -60,33 +59,46 @@
   <section id='about'>
       <div class="container" style="margin-top: 70px;">
         <div class="row">
-          <div class="col-lg-12">
-              <h1 class="mt-5">About Me</h1>
+            <div class="col-lg-12">
+                <h1 class="mt-5">About Me</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-9">
 
-            <p> Thanks for taking the time to visit! My name is Will. I am a data scientist and applied mathematician living in Vancouver, BC.</p>
+                <p> Hello. My name is Will. I am a data scientist and applied mathematician living in Vancouver, BC.</p>
 
-            <p> I obtained my Ph.D. at UBC where I studied the effects of random noise on nonlinear dynamical systems. The focus of my thesis was systematic dimensionality reduction methods for dynamical systems with multiple time scales and heavy-tailed stochastic driving. In layman's terms, my thesis was about taking complex random models and simplifying them to aid in computer simulations and analysis.</p>
+                <p class="text-center">
+                    <a href="https://www.linkedin.com/in/wft/"><img class="socicon" src="./img/linkedin.png"></a>
+                    <a href="https://github.com/WillThompson"><img class="socicon" src="./img/github.png"></a>
+                    <a href="https://www.instagram.com/_wft/"><img class="socicon" src="./img/instagram.png"></a>
+                    <a href="https://twitter.com/_wft"><img class="socicon" src="./img/twitter.png"</a>
+                    <a href="mailto:will.thompson@zoho.com"><img class="socicon" src="./img/mail.png"></a>
+                </p>
 
-            <p> Feel free to reach out to me. I don't usually bite people.</p>
-
+            </div>
+            <div class="col-lg-3">
+                <img class="avatar" src="./img/me2.jpg" width=100%>
+                </img>
+            </div>
           </div>
         </div>
-      </div>
   </section>
 
-  <section id='interests'>
+  <!--<section id='interests' class="offw">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <h1 class="mt-5">Interests</h1>
-            <p>
-                <h5>Stochastic Differential Equations</h5>
-                <p>Stochastic differential equations (SDEs) are used in many disciplines to model the behaviour of continuously changing quantities that are subject to random (unpredictable) forces, such as option prices, the electrical potential across the membranes of neurons, and the dynamics of microscopic particles.</p>
 
-    <p>A generic SDE process, $x_{t}$, can be modelled by the following equation: $$ dx_{t} = f(x_{t},t)\,dt + \sigma(x_{t},t)\,dW_{t}, \quad t \geq 0. $$ This equation describes the change in $x_{t}$ , denoted $dx_{t}$, over a miniscule time interval $dt \to 0^{+}$ as the sum of a deterministic component $f\,dt$ and a random component $\sigma\,dW_{t}$. The term $dW_{t}$ typically represents a Gaussian white noise forcing, which essentially means that, over time change $dt$, the trajectory of the system is perturbed by a Gaussian random variable with mean zero and variance $dt$. The effect of this perturbation is scaled by the quantity $\sigma$ which can be state-dependent.<br>
+            <p> I obtained my Ph.D. at UBC where I studied the effects of random noise on nonlinear dynamical systems. The focus of my thesis was systematic dimensionality reduction methods for dynamical systems with multiple time scales and heavy-tailed stochastic driving. In layman's terms, my thesis was about taking complex random models and simplifying them to aid in computer simulations and analysis.</p>
 
-    <p>My interest in these processes is driven by my interest in differential equations in general, and seeing what you can learn about time-varying processes in the presence of unpredictable factors.</p>
-            </p>
+            <h5>Stochastic Differential Equations</h5>
+            <p>Stochastic differential equations (SDEs) are used in many disciplines to model the behaviour of continuously changing quantities that are subject to random (unpredictable) forces, such as option prices, the electrical potential across the membranes of neurons, and the dynamics of microscopic particles.</p>
+
+            <p>A generic SDE process, $x_{t}$, can be modelled by the following equation: $$ dx_{t} = f(x_{t},t)\,dt + \sigma(x_{t},t)\,dW_{t}, \quad t \geq 0. $$ This equation describes the change in $x_{t}$ , denoted $dx_{t}$, over a miniscule time interval $dt \to 0^{+}$ as the sum of a deterministic component $f\,dt$ and a random component $\sigma\,dW_{t}$. The term $dW_{t}$ typically represents a Gaussian white noise forcing, which essentially means that, over time change $dt$, the trajectory of the system is perturbed by a Gaussian random variable with mean zero and variance $dt$. The effect of this perturbation is scaled by the quantity $\sigma$ which can be state-dependent.<br>
+
+            <p>My interest in these processes is driven by my interest in differential equations in general, and seeing what you can learn about time-varying processes in the presence of unpredictable factors.</p>
 
             <h5>Randomness</h5>
     		<p>Generating random data streams for encryption and security is increasingly important as our lives are becoming more and more web-based. Anything predictable has the potential to be exploited by a bad actor and compromises the integrity of that which is intended to be secret.</p>
@@ -94,16 +106,19 @@
     		<p>I enjoy assessing the randomness of data as it is one of the times (possibly the only time) where manufactured data streams are subject to rigorous statistical analysis and there is an obvious importance to making sure the analysis is competently performed. A discussion of some tests for scaled random data can be found in "<a href="https://en.wikipedia.org/wiki/The_Art_of_Computer_Programming">The Art of Computer Programming</a>" by Donald Knuth. I have implemented some of the tests</p>
 
 
-          </div>
+        </div>
         </div>
       </div>
-  </section>
+  </section> -->
 
-  <section id='publications'>
+  <section id='publications' class="offw">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <h1 class="mt-5">Publications</h1>
+
+            <p>The publications below are from my academic career where I primarily studied stochastic modelling. If you have an interest in climate science, neuronal modelling, or option pricing, you may find the papers below of some interest:</p>
+
 
             <p><b>W. F. Thompson</b>, R. Kuske, and A. Monahan. <a href="https://aip.scitation.org/doi/abs/10.1063/1.4985675?journalCode=cha">Reduced &alpha;-stable dynamics for multiple time scale systems forced with correlated additive and multiplicative Gaussian white noise</a>. <i>Chaos</i>, (27) 113105, Nov 2017.
             </p>
@@ -121,23 +136,8 @@
       </div>
   </section>
 
-
-  <section id='contact'>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h1 class="mt-5">Contact</h1>
-            <p class="text-center">
-                <a href="https://www.linkedin.com/in/wft/"><img class="socicon" src="./img/linkedin.png"></a>
-                <a href="https://github.com/WillThompson"><img class="socicon" src="./img/github.png"></a>
-                <a href="https://www.instagram.com/_wft/"><img class="socicon" src="./img/instagram.png"></a>
-                <a href="https://twitter.com/_wft"><img class="socicon" src="./img/twitter.png"</a>
-                <a href="mailto:will.thompson@zoho.com"><img class="socicon" src="./img/mail.png"></a>
-            </p>
-          </div>
-        </div>
-      </div>
-  </section>
+  <div class="footer">
+  </div>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.slim.min.js"></script>
