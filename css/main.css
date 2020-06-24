@@ -2,8 +2,8 @@
   --header-font: "Racing Sans One", cursive;
   --main-font: "Helvetica", sans-serif;
   --primary-colour: #dc0073;
-  --secondary-colour: #345995;
-  --secondary-colour-darken: #123773;
+  --secondary-colour: #4062BB;
+  --secondary-colour-darken: #3052AB;
 }
 
 body {
@@ -23,6 +23,10 @@ a {
     color: var(--secondary-colour);
 }
 
+.socicon {
+    width: 15%;
+}
+
 a:hover {
     color: var(--secondary-colour-darken);
 }
@@ -39,10 +43,11 @@ a:hover {
 
 .avatar {
   border-radius: 50%;
-  margin: 1em;
+  margin-bottom: 1em;
 }
 
 section{
+    padding-top: 2em;
     padding-bottom: 2em;
 }
 
