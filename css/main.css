@@ -44,6 +44,14 @@ a:hover {
 .avatar {
   border-radius: 50%;
   margin-bottom: 1em;
+  padding: 10px;
+  border: 2px solid var(--primary-colour)
+}
+
+.soft_edge {
+  border-radius: 3%;
+  padding: 10px;
+  border: 2px solid var(--primary-colour)
 }
 
 section{
