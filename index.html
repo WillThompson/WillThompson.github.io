@@ -142,7 +142,10 @@
 
                       The Lagrangian of entropy, $L$, can be constructed as follows:
                       $$
-                      L[\rho] = \int_{-\infty}^{\infty}S[\rho]\,dx + \lambda_{0}\left(\int_{-\infty}^{\infty}\rho\,dx - 1 \right) + \lambda_{1}\left(\int_{-\infty}^{\infty}x^{2}\rho\,dx - \sigma^{2} \right)
+                      \begin{align}
+                      L[\rho] &= \int_{-\infty}^{\infty}S[\rho]\,dx + \lambda_{0}\left(\int_{-\infty}^{\infty}\rho\,dx - 1 \right)\\
+                       &\quad+ \lambda_{1}\left(\int_{-\infty}^{\infty}x^{2}\rho\,dx - \sigma^{2} \right)\,dx
+                      \end{align}
                       $$
                       where the terms with $\lambda_{0},\,\lambda_{1}$ coefficients represent the normalization and finite variance constraints of the solution $\rho = \rho(x)$.
                       <br><br>
@@ -156,7 +159,9 @@
                       $$
                       The function $\eta = \eta(x)$ is arbitrary and satisfies the same boundary conditions as $\rho$. Thus, for $\delta L / \delta\epsilon$ to be equal to 0 when $\rho$ is an optimal function, we must have:
                       $$
-                      \log(\rho) - 1 + \lambda_{1}x^{2} + \lambda_{0} = 0 \quad \Rightarrow \quad \rho = \hat{\lambda}_{0}\exp(\hat{\lambda}_{1}x^{2}).
+                      \begin{align}
+                      &\log(\rho) - 1 + \lambda_{1}x^{2} + \lambda_{0} = 0 \\ \Rightarrow \quad &\rho = \hat{\lambda}_{0}\exp(\hat{\lambda}_{1}x^{2}).
+                      \end{align}
                       $$
                       Applying the normalization and finite variance constraints to solve for the constants $\hat{\lambda}_{0}$, $\hat{\lambda}_{1}$ gives:
                       $$
@@ -216,7 +221,7 @@
 
                     Indeed, the normal distribution is a special case of the $\alpha$-stable distribution and the most useful to statisticians dealing with finite variance problems.
 
-                    However, $\alpha$-stable processes have been shown to have use modelling the behaviour of option pricing and atmospheric processes subject to advection to name a couple.
+                    However, $\alpha$-stable processes have been shown to have use modelling the behaviour of option pricing and atmospheric processes subject to advection.
 
                 </p>
               </div>
