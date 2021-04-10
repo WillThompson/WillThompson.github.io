@@ -42,9 +42,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="#about">About Me</a>
             </li>
-            <!--<li class="nav-item">
+            <li class="nav-item">
                 <a class="nav-link" href="#interests">Interests</a>
-            </li>-->
+            </li>
             <li class="nav-item">
                 <a class="nav-link" href="#publications">Publications</a>
             </li>
@@ -70,7 +70,7 @@
                     <a href="https://www.linkedin.com/in/wft/"><img class="socicon" src="./img/linkedin.png"></a>
                     <a href="https://github.com/WillThompson"><img class="socicon" src="./img/github.png"></a>
                     <a href="https://www.instagram.com/_wft/"><img class="socicon" src="./img/instagram.png"></a>
-                    <a href="https://twitter.com/_wft"><img class="socicon" src="./img/twitter.png"</a>
+                    <a href="https://twitter.com/_wft"><img class="socicon" src="./img/twitter.png"></a>
                     <a href="mailto:will.thompson@zoho.com"><img class="socicon" src="./img/mail.png"></a>
                 </p>
 
@@ -91,7 +91,7 @@
                 <p> My name is Will. I am a data scientist and applied mathematician living in Vancouver, BC.</p>
                 <p> In my previous academic life, I was interested stochasticity and nonlinear dynamical systems. My doctoral thesis was about systematic methods of simplifying complex random dynamical models to aid in computer simulations and analysis.
                 <p> I used to analyse the mathematical models underlying online casino games and test the statistics of random number generators for a living. Trust me, unless you have an insider or perfect knowledge of the RNG, you can't beat the house.</p>
-                <p> Ask me why the normal distribution shows up in (almost) every statistical modelling problem.</p>
+                <p> Ask me why the normal distribution shows up in (almost) every statistical modelling problem... or read about it below.</p>
             </div>
             <div class="col-lg-3">
                 <p class="text-center">
@@ -103,11 +103,11 @@
     </div>
   </section>
 
-  <!--<section id='interests' class="offw">
+<section id='interests'>
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
-            <h1 class="mt-5">Interests</h1>
+            <div class="col-lg-12">
+            <!--<h1 class="mt-5">Interests</h1>
 
             <p> I obtained my Ph.D. at UBC where I studied the effects of random noise on nonlinear dynamical systems. The focus of my thesis was systematic dimensionality reduction methods for dynamical systems with multiple time scales and heavy-tailed stochastic driving. In layman's terms, my thesis was about taking complex random models and simplifying them to aid in computer simulations and analysis.</p>
 
@@ -122,14 +122,114 @@
     		<p>Generating random data streams for encryption and security is increasingly important as our lives are becoming more and more web-based. Anything predictable has the potential to be exploited by a bad actor and compromises the integrity of that which is intended to be secret.</p>
     		<p>There is a zoo of many different algorithms for generating (pseudo-) random data, and they all need to be assessed to ensure they have the appropriate qualities for their intended use. While there is no way to prove that a data stream is random, there are definitely ways to effectively prove that it is not random. The methods for proving non-randomness are statistical. Hypothesis testing is used to see if the statistics of a random datastream conform to what would be expected from a truly random sequence.</p>
     		<p>I enjoy assessing the randomness of data as it is one of the times (possibly the only time) where manufactured data streams are subject to rigorous statistical analysis and there is an obvious importance to making sure the analysis is competently performed. A discussion of some tests for scaled random data can be found in "<a href="https://en.wikipedia.org/wiki/The_Art_of_Computer_Programming">The Art of Computer Programming</a>" by Donald Knuth. I have implemented some of the tests</p>
+        -->
+        <h1 class="mt-5">Interests</h1>
 
+        <div id="accordion">
+            <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  The normal distribution is everywhere. Why?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                  <p>
+                      The normal distribution shows up everywhere in scientific and statistical research. An obvious question to ask is: why? Why would this distribution be the one to manifest all over the place? One could simply quote the central limit theorem, but I find that unsatisfying. A better answer to that question is "because it is a maximizer of entropy". This can be shown using methods from calculus of variations.
+                      <br><br>
 
-        </div>
+                      The Lagrangian of entropy, $L$, can be constructed as follows:
+                      $$
+                      L[\rho] = \int_{-\infty}^{\infty}S[\rho]\,dx + \lambda_{0}\left(\int_{-\infty}^{\infty}\rho\,dx - 1 \right) + \lambda_{1}\left(\int_{-\infty}^{\infty}x^{2}\rho\,dx - \sigma^{2} \right)
+                      $$
+                      where the terms with $\lambda_{0},\,\lambda_{1}$ coefficients represent the normalization and finite variance constraints of the solution $\rho = \rho(x)$.
+                      <br><br>
+                      Similarly to the rules of standard calculus, we can differentiate $L$ and set the derivative equal to zero in order to determine an optimum functional argument. Taking the functional derivative gives
+
+                      $$
+                      \begin{align}
+                      \frac{\delta L}{\delta \epsilon}[\rho] &= \lim_{\epsilon \rightarrow 0}\frac{L[\rho + \epsilon\eta] - L[\rho]}{\epsilon} \\
+                      &= \int_{-\infty}^{\infty}\eta\left( \log(\rho) - 1 + \lambda_{1}x^{2} + \lambda_{0}\right)\,dx
+                      \end{align}
+                      $$
+                      The function $\eta = \eta(x)$ is arbitrary and satisfies the same boundary conditions as $\rho$. Thus, for $\delta L / \delta\epsilon$ to be equal to 0 when $\rho$ is an optimal function, we must have:
+                      $$
+                      \log(\rho) - 1 + \lambda_{1}x^{2} + \lambda_{0} = 0 \quad \Rightarrow \quad \rho = \hat{\lambda}_{0}\exp(\hat{\lambda}_{1}x^{2}).
+                      $$
+                      Applying the normalization and finite variance constraints to solve for the constants $\hat{\lambda}_{0}$, $\hat{\lambda}_{1}$ gives:
+                      $$
+                      \rho = \frac{1}{\sqrt{2\pi\sigma^{2}}}\exp\left( -\frac{x^{2}}{2\sigma^{2}}\right).
+                      $$
+                      Voil&agrave! We see that $\rho$ is the density function for the normal distribution with variance $\sigma^{2}$. (Naturally, one should confirm that this optimal function gives a maximum for $L$ but I won't do that here. Too much math. Just take my word for it)<br><br>
+
+                      Isn't that cool?!
+
+                  </p>
+              </div>
+            </div>
+            </div>
+            <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Stochastic Differential Equations
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+
+                  <p>Stochastic differential equations (SDEs) are used in many disciplines to model the behaviour of continuously changing quantities that are subject to random (unpredictable) forces, such as option prices, the electrical potential across the membranes of neurons, and the dynamics of microscopic particles.</p>
+
+                  <p>A generic SDE process, $x_{t}$, can be modelled by the following equation: $$ dx_{t} = f(x_{t},t)\,dt + \sigma(x_{t},t)\,dW_{t}, \quad t \geq 0. $$ This equation describes the change in $x_{t}$ , denoted $dx_{t}$, over a miniscule time interval $dt \to 0^{+}$ as the sum of a deterministic component $f\,dt$ and a random component $\sigma\,dW_{t}$. The term $dW_{t}$ typically represents a Gaussian white noise forcing, which essentially means that, over time change $dt$, the trajectory of the system is perturbed by a Gaussian random variable with mean zero and variance $dt$. The effect of this perturbation is scaled by the quantity $\sigma$ which can be state-dependent.<br>
+
+                  <p>My interest in these processes is driven by my interest in differential equations in general, and seeing what you can learn about time-varying processes in the presence of unpredictable factors.</p>
+
+              </div>
+            </div>
+            </div>
+            <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  $\alpha$-stable processes
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                <p>
+                    In analogy to why the normal distribution is an attractor for stochasticity for processes with finite second moments, there is a broader class of stochastic process that are the attractors for stochastic processes having non-finite second moments and non-finite first moments. These processes are called <i>$\alpha$-stable processes</i>, where the $0 < \alpha \leq 2$ refers to the <i>stability index</i> of the distribution (essentially the power-law behaviour of the tails of the distribution)<br><br>
+
+                    Analysis of these distributions tends to be much easier via their <i>characteristic functions</i>, since the associated distributions do not have neat closed form expressions in real space. The characteristic function of a distribution is the Fourier transform of its density function and for a symmetric $\alpha$-stable distribution it is equal to
+                    $$
+                    \psi(k) = \exp\left(-\sigma^\alpha |k|^{\alpha}\right).
+                    $$
+                    It is interesting to note that the characteristic function of the normal distribution with variance $\nu^{2}$ is consistent with this form when $\alpha = 2$ and $\sigma = \frac{\nu}{\sqrt{2}}$:
+
+                    $$
+                    \exp\left( -\frac{\nu^{2}}{2}k^{2}\right)
+                    $$
+
+                    Indeed, the normal distribution is a special case of the $\alpha$-stable distribution and the most useful to statisticians dealing with finite variance problems.
+
+                    However, $\alpha$-stable processes have been shown to have use modelling the behaviour of option pricing and atmospheric processes subject to advection to name a couple.
+
+                </p>
+              </div>
+            </div>
+            </div>
+            </div>
+
+            </div>
         </div>
       </div>
-  </section> -->
+  </section>
 
-  <section id='publications'>
+  <section id='publications' class="offw">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
