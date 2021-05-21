@@ -2,15 +2,15 @@
   --header-font: "Racing Sans One", cursive;
   --main-font: "Helvetica", sans-serif;
   --primary-colour: #dc0073;
-  --secondary-colour: #4062BB;
-  --secondary-colour-darken: #3052AB;
+  --secondary-colour: #19297C;
+  --secondary-colour-darken: var(--primary-colour);
 }
 
 body {
     font-family: var(--main-font);
     font-size: 14pt;
     background-color: #fefefe;
-    color: #504746;
+    color: #3A3335;
 }
 
 h1 {
@@ -23,14 +23,21 @@ a {
     color: var(--secondary-colour);
 }
 
-.socicon {
-    width: 15%;
-}
-
 a:hover {
     color: var(--secondary-colour-darken);
 }
 
+.btn-link {
+    color: var(--secondary-colour);
+}
+
+.btn-link:hover {
+    color: var(--secondary-colour-darken);
+}
+
+.socicon {
+    width: 15%;
+}
 
 .navbar-brand{
     font-family: var(--header-font);
@@ -68,6 +75,13 @@ section{
     padding-bottom: 30px;
 }
 
+/*.btn-link{
+    color: var(--primary-colour);
+}
+
+.btn-link:hover{
+    color: var(--primary-colour);
+}*/
 
 /* ul{
 padding-left: 0;
