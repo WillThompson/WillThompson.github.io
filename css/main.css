@@ -75,6 +75,10 @@ section{
     padding-bottom: 30px;
 }
 
+.card {
+    margin-bottom: 5px;
+}
+
 /*.btn-link{
     color: var(--primary-colour);
 }
