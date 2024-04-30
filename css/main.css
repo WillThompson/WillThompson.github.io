@@ -1,5 +1,5 @@
 :root {
-  --header-font: "Racing Sans One", cursive;
+  --header-font: "Permanent Marker", cursive;
   --main-font: "Helvetica", sans-serif;
   --primary-colour: #dc0073;
   --secondary-colour: #19297C;
@@ -10,7 +10,7 @@ body {
     font-family: var(--main-font);
     font-size: 14pt;
     background-color: #fefefe;
-    color: #3A3335;
+    color: #000000;
 }
 
 h1 {
@@ -46,6 +46,7 @@ a:hover {
 
 .navbar{
   background-color: var(--primary-colour) !important;
+  font-family: var(--header-font);
  }
 
 .avatar {
